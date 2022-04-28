@@ -1,0 +1,140 @@
+/* css reset */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* general css */
+
+.dflex {
+    display: flex;
+}
+
+.font14 {
+    font-size: x-large;
+}
+
+.justifyContent-Center {
+    justify-content: center;
+}
+
+.justifyContent-around {
+    justify-content: space-around;
+}
+
+.justifyContent-between {
+    justify-content: space-between;
+}
+
+.alignItems-center {
+    align-items: center;
+}
+
+.textAlign {
+    text-align: center;
+}
+
+.padding {
+    padding: 15px;
+}
+
+.flex1 {
+    flex: 1;
+}
+
+.flex2{
+    flex: 2;
+}
+
+.flex3 {
+    flex: 3;
+}
+
+.marginRight{
+    margin-right: 15px;
+}
+
+.marginTop10{
+    margin-top: 10px;
+}
+
+.highTemp {
+    color: red;
+}
+
+.lowTemp {
+    color: #377fe5;
+}
+
+.acceptColor {
+    color: #9fc5f8
+}
+
+.fontWhite {
+    color: white;
+}
+
+.backgroundBlue {
+    background-color: #9fc5f8;
+}
+.backgroundGray {
+    background-color: #eeeeee;
+}
+
+.gapSmall {
+    gap: 10px;
+}
+
+.gapMedium {
+    gap: 20px;
+}
+
+.gapLarge{
+    gap: 20px;
+}
+
+/* Header */
+.header {
+    padding: 15px;
+}
+
+/* location */
+.location{
+    border-bottom: 2px solid black;
+}
+
+.weatherImage {
+    height: 75px;
+    border-radius: 50%;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: white;
+}
+
+.high::after, .lower::after {
+    content: "°";
+}
+
+#cookie {
+    position: fixed;
+    padding: 10px;
+    bottom: 0px;
+    left: 25%;
+    right: 25%;
+    border: 2px solid black;
+
+}
+
+#btn {
+    width: 75px;
+    border: 1px solid black;
+    padding: 5px;
+    box-shadow: 15px;
+    color: black;
+}
+
+#weatherSection {
+    padding-left: 15%;
+    padding-right: 15%;
+}

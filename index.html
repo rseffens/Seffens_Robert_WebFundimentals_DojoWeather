@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather Forcast</title>
+</head>
+<body>
+    
+    <!-- header bar-->
+    <div class="dflex fontWhite backgroundBlue header justifyContent-around"> 
+        <div>
+            <h1>Dojo Weather</h1>
+        </div>
+        <div class="dflex justifyContent-between alignItems-center font14 gapLarge">
+            <div>
+                <a href="#" class="marginRight" onclick="addAlert()" style="color: white;">Burbank</a>
+                <a href="#" style="color: white;" onclick="addAlert()" class="marginRight"> Chicaco</a>
+                <a href="#" style="color: white;" onclick="addAlert()" >Dallas</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- location bar -->
+    <div class="dflex justifyContent-around location">
+        <h1>San Jose</h1>
+        <div class="dflex justifyContent-between alignItems-center padding gapSmall">   
+            <h4>show temperature in</h4>
+            <select name="temp" onchange="convert(this)">
+                <option>°C</option>
+                <option>°F</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- weather section -->
+    <div class="dflex padding gapLarge justifyContent-around padding" id="weatherSection">
+        <!-- day container -->
+        <div class="dflex backgroundGray padding textAlign justifyContent-between">
+            <div class="dflex">
+                <div>
+                    <h2> Today </h2>
+                    <img src="./Assets/some_rain.png" alt="rain" class="weatherImage">
+                    <p class="marginTop10">some rain</p>
+                    <!-- temp div -->
+                    <div class="dflex justifyContent-around marginTop10">
+                        <h3 id="temp1" class="highTemp">24°</h3>
+                        <h3 id="temp2" class="lowTemp">18°</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="backgroundGray padding justifyContent-between text alignItems-center textAlign">
+            <div>
+                <h2> Tomorrow </h2>
+                <img src="./Assets/some_sun.png" alt="sun" class="weatherImage">
+                <p class="marginTop10">some sun</p>
+                <!-- temp div -->
+                <div class="dflex justifyContent-around marginTop10">
+                    <h3 id="temp3" class="highTemp">27°</h3>
+                    <h3 id="temp4" class="lowTemp">19°</h3>
+                </div>
+            </div>
+        </div>
+        <div class="backgroundGray padding justifyContent-between text alignItems-center textAlign">
+            <div>
+                <div>
+                    <h2> Friday </h2>
+                    <img src="./Assets/some_clouds.png" alt="clouds" class="weatherImage">
+                    <p class="marginTop10">some clouds</p>
+                    <!-- temp div -->
+                    <div class="dflex justifyContent-around marginTop10">
+                        <h3 id="temp5" class="highTemp">21°</h3>
+                        <h3 id="temp6" class="lowTemp">16°</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="backgroundGray padding justifyContent-between text alignItems-center textAlign">
+            <div>
+                <h2> Saturday </h2>
+                <img src="./Assets/some_sun.png" alt="sun" class="weatherImage">
+                <p class="marginTop10">some sun</p>
+                <!-- temp div -->
+                <div class="dflex justifyContent-around marginTop10">
+                    <h3 id="temp7" class="highTemp">26°</h3>
+                    <h3 id="temp8" class="lowTemp">21°</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- cookie -->
+    <div id="cookie" class="dflex justifyContent-around">
+        <div class="dflex justifyContent-around alignItems-center gapSmall">
+            <img src="Assets/cookie.png" alt="cookie"> 
+            <div>
+                <h3>Stop! Cookie time</h3>
+                <h5>We use coockies (sadly not the edible ones) to personaliez content and ads, 
+                    to provide social media fetures and to analyse out traffic <a href="x">Read more...</a>.</h5>    
+            </div>
+                <button id="btn" class="backgroundBlue" onclick="removeCookie(this)">I Accept</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
